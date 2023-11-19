@@ -64,7 +64,7 @@
             conditionObj.code.text = selectedOption.value+"型";
             //conditionObj.severity.text = severitySelect.options[severitySelect.selectedIndex].text;
 
-            var jsonStr = JSON.stringify(conditionObj);
+            var jsonStr = JSON.stringify(conditionObj);//轉換為字符串
             var apiURL = FHIRrootURL + "Observation?subject=23549468";
             sendHttpPost(apiURL, jsonStr, callBack);
         }
